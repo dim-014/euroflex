@@ -1,0 +1,13 @@
+* { box-sizing: border-box; }
+
+html, body { margin: 0; padding: 0; }
+
+body, input, button, select, textarea { font-family: 'Roboto'; color: #000000; }
+
+html, body, #root { height: 100%; }
+
+ul, ol { margin: 0; padding: 0; list-style: none;}
+
+table { border-collapse: collapse; }
+th { text-align: left; }
+td { vertical-align: middle; }
