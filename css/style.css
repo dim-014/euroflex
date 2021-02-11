@@ -308,9 +308,25 @@ html {
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; }
-  .products__slide_hidden {
-    display: none; }
+            justify-content: center;
+    position: relative; }
+  .products__slide {
+    -webkit-animation-name: fade;
+            animation-name: fade;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s; }
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4; }
+  to {
+    opacity: 1; } }
+
+@keyframes fade {
+  from {
+    opacity: 0.4; }
+  to {
+    opacity: 1; } }
   .products__arrows {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -345,8 +361,7 @@ html {
         -ms-flex-pack: center;
             justify-content: center;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    margin-bottom: 60px; }
+        flex-wrap: wrap; }
   .solutions__card {
     padding: 22px 23px 0px 23px;
     border-radius: 5px;
@@ -357,15 +372,6 @@ html {
     height: 260px;
     margin-right: 30px;
     margin-bottom: 40px; }
-    .solutions__card:nth-child(4) {
-      margin-right: 0px; }
-    .solutions__card:nth-child(8) {
-      margin-right: 0px; }
-    .solutions__card:nth-child(9) {
-      margin-bottom: 0px; }
-    .solutions__card:nth-child(10) {
-      margin-right: 0px;
-      margin-bottom: 0px; }
     .solutions__card_one {
       padding-bottom: 43px;
       background: url("../img/cards__bg/1.png") center center/cover no-repeat; }
@@ -387,10 +393,8 @@ html {
     .solutions__card_eight {
       background: url("../img/cards__bg/8.png") center center/cover no-repeat; }
     .solutions__card_nine {
-      margin-bottom: 100px;
       background: url("../img/cards__bg/9.png") center center/cover no-repeat; }
     .solutions__card_ten {
-      margin-bottom: 141px;
       background: url("../img/cards__bg/10.png") center center/cover no-repeat; }
   .solutions__name {
     margin-top: 0px;
@@ -549,10 +553,10 @@ html {
     position: absolute; }
   .production__left {
     left: 292px;
-    top: 3757px; }
+    top: 3877px; }
   .production__right {
     right: 292px;
-    top: 3757px; }
+    top: 3877px; }
 
 .advantages {
   padding: 100px 0px 115px 0px; }
@@ -612,7 +616,7 @@ html {
   .other__calculation {
     position: absolute;
     right: 250px;
-    top: 4649px;
+    top: 4787px;
     width: 430px;
     height: 513px;
     padding: 50px 65px 20px 63px;

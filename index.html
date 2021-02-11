@@ -82,7 +82,7 @@
           <div class="container">
                <h2 class="products__heading">НАША ПРОДУКЦИЯ</h2>
                <ul class="products__tabs">
-                    <li class="products__tab">
+                    <li class="products__tab products__tab_active">
                          <div class="products__pic">
                               <img src="img/sheet.png" alt="Полотно Linear">
                          </div>
@@ -108,7 +108,7 @@
                     </li>
                </ul>
                <div class="products__content">
-                    <div class="products__block" id="tab__1">
+                    <div class="products__block products__block_active" id="tab__1">
                          <div class="products__slider">
                               <div class="products__slide">
                                    <div class="products__photo">
@@ -120,7 +120,7 @@
                                         <button class="products__btn">БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</button>
                                    </div>
                               </div>
-                              <div class="products__slide products__slide_hidden">
+                              <div class="products__slide">
                                    <div class="products__photo">
                                         <img src="img/product.png" alt="Фотография товара">
                                    </div>
@@ -130,7 +130,7 @@
                                         <button class="products__btn">БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</button>
                                    </div>
                               </div>
-                              <div class="products__slide products__slide_hidden">
+                              <div class="products__slide">
                                    <div class="products__photo">
                                         <img src="img/product.png" alt="Фотография товара">
                                    </div>
@@ -142,10 +142,10 @@
                               </div>
                          </div>
                          <div class="products__arrows">
-                              <a class="products__left">
-                                   <img src="img/left.png" alt="Налево">
+                              <a class="products__left" onclick="previousSlide()">
+                                   <img src="img/left.png" alt="Налево" >
                               </a>
-                              <a class="products__right">
+                              <a class="products__right" onclick="nextSlide()">
                                    <img src="img/right.png" alt="Направо">
                               </a>
                          </div>
@@ -232,7 +232,7 @@
                </div>
                <p class="solutions__warn">СКРЫТЬ ВСЕ РЕШЕНИЯ</p>
                <a href="#" class="solutions__hide"><img src="img/hide.png" alt="Скрыть"></a>
-               <p class="solutions__offer">Здесь приведены только некоторые наши решения. Получите консультацию и расчет бесплатно!</p>
+               <p class="solutions__offer">Здесь приведены только некоторые наши решения.<br>Получите консультацию и расчет бесплатно!</p>
                <div class="solutions__consult">
                     <button class="solutions__btn">ПОЛУЧИТЬ БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ</button>
                </div>
@@ -298,10 +298,10 @@
                     <div class="production__dot"></div>
                </div>
                <div class="production__arrows">
-                    <a class="production__left">
+                    <a class="production__left" onclick="prev()">
                          <img src="img/left.png" alt="Налево">
                     </a>
-                    <a class="production__right">
+                    <a class="production__right" onclick="next()">
                          <img src="img/right.png" alt="Направо">
                     </a>
                </div>
